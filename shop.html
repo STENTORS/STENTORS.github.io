@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Shop</title>
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+	<script src="js/shop.js"></script>
+    <header>
+        <h1>CTF Shop</h1>
+    </header>
+
+    <main>
+        <section class="shop-item">
+            <h2>Item 1</h2>
+			<div>
+				Amount: <span id="amount-display1">5</span>
+			</div>
+            <p>Price: 50 Points</p>
+            <button class="button" onclick="remove(1)">-</button>
+			<button class="button" onclick="addToBasket('Item 1', 50,1)">+</button>
+        </section>
+
+        <section class="shop-item">
+            <h2>Item 2</h2>
+			<div>
+				Amount: <span id="amount-display2">5</span>
+			</div>
+            <p>Price: 75 Points</p>
+            <button class="button" onclick="remove(2)">-</button>
+			<button class="button" onclick="addToBasket('Item 1', 50,2)">+</button>
+        </section>
+
+        <section class="shop-item">
+            <h2>Item 3</h2>
+			<div>
+				Amount: <span id="amount-display3">5</span>
+			</div>
+            <p>Price: 100 Points</p>
+            <button class="button" onclick="remove(3)">-</button>
+			<button class="button" onclick="addToBasket('Item 1', 50,3)">+</button>
+        </section>
+
+        <div class="basket-actions">
+            <button class="button" onclick="viewBasket()">View Basket</button>
+            <button class="button" onclick="checkout()">Checkout</button>
+			<button class="button" onclick="home()">Home</button>
+        </div>
+    </main>
+
+</body>
+
+<script>
+	document.elementById("wow").innerHTML = amount;
+</script>
+</html>
