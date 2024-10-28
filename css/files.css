@@ -1,3 +1,4 @@
+/* Body and general styling */
 body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
@@ -14,9 +15,21 @@ header {
     border-bottom: 2px solid #00FF00;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin-top: 10px;
+    color: #00FF00;
+    font-size: 1.1em;
+}
+
 /* Main content styling */
 main {
     padding: 20px;
+    text-align: center;
 }
 
 /* Shop item styling */
@@ -27,25 +40,40 @@ main {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 255, 0, 0.3);
     border: 1px solid #00FF00;
-}
-
-.shop-item h2 {
-    margin-top: 0;
-    color: #00FF00;
-}
-
-.shop-item p {
-    margin: 10px 0;
-    color: #00FF00;
-}
-
-/* Basket actions styling */
-.basket-actions {
-    margin-top: 20px;
+    width: 200px;
     text-align: center;
+    margin: auto;
 }
 
-.button {
+.shop-item label {
+    color: #00FF00; /* Green text */
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.shop-item input[type="file"] {
+    background-color: #000; /* Black background */
+    color: #00FF00; /* Green text */
+    border: 2px solid #00FF00; /* Green border */
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.shop-item input[type="file"]::file-selector-button {
+    background-color: #00FF00; /* Green button */
+    color: #000; /* Black text */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+button {
     background-color: #111;
     color: #00FF00;
     border: 2px solid #00FF00;
@@ -59,17 +87,18 @@ main {
     margin: 5px;
 }
 
-.button:hover {
+button:hover {
     background-color: #00FF00;
     color: #000;
     transform: scale(1.05);
 }
 
-.button:active {
+button:active {
     background-color: #009900;
     color: #000;
     transform: scale(0.95);
 }
+
 
 /* Footer styling */
 footer {
@@ -81,44 +110,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-
-/* Input styling */
-input[type="text"] {
-    background-color: #000; /* Black background */
-    color: #00FF00; /* Green text */
-    border: 2px solid #00FF00; /* Green border */
-    border-radius: 4px;
-    padding: 8px;
-    width: 100%;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-}
-
-input[type="text"]:focus {
-    outline: none;
-    box-shadow: 0 0 5px #00FF00; /* Green glow on focus */
-}
-
-
-/* Progress bar container */
-.progress-container {
-    width: 98%;
-    background-color: #333; /* Dark background for the progress bar */
-    border-radius: 5px;
-    margin-top: 10px;
-    height: 20px; /* Height of the progress bar */
-    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.3);
-}
-
-/* Progress bar */
-.progress-bar {
-    height: 100%;
-    width: 0%; /* Initial width */
-    background-color: #00FF00; /* Green color for the progress */
-    border-radius: 5px;
-    transition: width 0.3s ease; /* Smooth transition */
 }

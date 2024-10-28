@@ -1,1 +1,44 @@
-const _0x2a8f5c=_0x56a2;(function(_0x1a46cb,_0x5a5e77){const _0x1112e4=_0x56a2,_0x27cfff=_0x1a46cb();while(!![]){try{const _0x423f1a=parseInt(_0x1112e4(0xd5))/0x1*(-parseInt(_0x1112e4(0xbd))/0x2)+parseInt(_0x1112e4(0xba))/0x3*(-parseInt(_0x1112e4(0xd0))/0x4)+-parseInt(_0x1112e4(0xd1))/0x5*(-parseInt(_0x1112e4(0xc8))/0x6)+-parseInt(_0x1112e4(0xcb))/0x7*(parseInt(_0x1112e4(0xb5))/0x8)+parseInt(_0x1112e4(0xbb))/0x9*(parseInt(_0x1112e4(0xd7))/0xa)+-parseInt(_0x1112e4(0xb6))/0xb+parseInt(_0x1112e4(0xcf))/0xc;if(_0x423f1a===_0x5a5e77)break;else _0x27cfff['push'](_0x27cfff['shift']());}catch(_0x54cd58){_0x27cfff['push'](_0x27cfff['shift']());}}}(_0x50fa,0x27004));class RandomTextBlock{constructor(_0x2b6e07=0x14,_0x25ae92=[0xa,0x1e],_0x549162=0x1f4){const _0x2eadc9=_0x56a2;this[_0x2eadc9(0xcc)]=_0x2b6e07,this[_0x2eadc9(0xc0)]=_0x25ae92,this['spawnInterval']=_0x549162,this[_0x2eadc9(0xd9)]='01',this[_0x2eadc9(0xb7)]();}[_0x2a8f5c(0xc9)](){const _0x1026ee=_0x2a8f5c;let _0x4dc327='';for(let _0x50f8c7=0x0;_0x50f8c7<this[_0x1026ee(0xcc)];_0x50f8c7++){_0x4dc327+=this[_0x1026ee(0xd9)][_0x1026ee(0xd6)](Math[_0x1026ee(0xc6)](Math['random']()*this['characters']['length']))+'<br>';}return _0x4dc327;}[_0x2a8f5c(0xd2)](){const _0x229536=_0x2a8f5c,_0x1c4ad7=document[_0x229536(0xc5)](_0x229536(0xcd));_0x1c4ad7[_0x229536(0xd8)][_0x229536(0xbc)](_0x229536(0xce)),_0x1c4ad7[_0x229536(0xb9)]=this[_0x229536(0xc9)]();const _0x132bed=Math[_0x229536(0xd4)]()*window[_0x229536(0xc3)]-0x190,_0x101d52=window[_0x229536(0xb8)]+Math[_0x229536(0xd4)]()*window[_0x229536(0xd3)]-0x190,_0x3a9be0=Math[_0x229536(0xd4)]()*(this[_0x229536(0xc0)][0x1]-this['fontSizeRange'][0x0])+this[_0x229536(0xc0)][0x0];_0x1c4ad7[_0x229536(0xbf)][_0x229536(0xbe)]=_0x132bed+'px',_0x1c4ad7['style'][_0x229536(0xc4)]=_0x101d52+'px',_0x1c4ad7[_0x229536(0xbf)]['fontSize']=_0x3a9be0+'px',document[_0x229536(0xc7)][_0x229536(0xca)](_0x1c4ad7),setTimeout(()=>{const _0x115135=_0x229536;_0x1c4ad7[_0x115135(0xc2)]();},0x2710);}[_0x2a8f5c(0xb7)](){const _0x7d089d=_0x2a8f5c;setInterval(()=>this[_0x7d089d(0xd2)](),this[_0x7d089d(0xc1)]);}}function _0x50fa(){const _0x1d5d20=['textLength','div','text-block','2957160TsyLUF','28dlpkQx','249115lGfcZh','spawnTextBlock','innerHeight','random','2AFDrGM','charAt','2707470sXMJAc','classList','characters','1688YbDAld','2143416EqmSky','startSpawning','scrollY','innerHTML','2643EXlqHT','9tiLWOM','add','90866CbXenP','left','style','fontSizeRange','spawnInterval','remove','innerWidth','top','createElement','floor','body','18EJRLih','generateRandomText','appendChild','7133XBvOwl'];_0x50fa=function(){return _0x1d5d20;};return _0x50fa();}function _0x56a2(_0xb9aa9e,_0x49b6a5){const _0x50fa09=_0x50fa();return _0x56a2=function(_0x56a2e0,_0x561115){_0x56a2e0=_0x56a2e0-0xb5;let _0x20313b=_0x50fa09[_0x56a2e0];return _0x20313b;},_0x56a2(_0xb9aa9e,_0x49b6a5);}const randomTextBlock=new RandomTextBlock(0x14,[0xa,0x1e],0x1f4);
+class RandomTextBlock {
+    constructor(textLength = 20, fontSizeRange = [10, 30], spawnInterval = 500) {
+        this.textLength = textLength;
+        this.fontSizeRange = fontSizeRange;
+        this.spawnInterval = spawnInterval;
+        this.characters = "01"; // Only binary digits
+        this.startSpawning();
+    }
+
+    generateRandomText() {
+        let result = '';
+        for (let i = 0; i < this.textLength; i++) {
+            result += this.characters.charAt(Math.floor(Math.random() * this.characters.length)) + '<br>';
+        }
+        return result;
+    }
+
+    spawnTextBlock() {
+        const textBlock = document.createElement('div');
+        textBlock.classList.add('text-block');
+        textBlock.innerHTML = this.generateRandomText(); // Use innerHTML to interpret <br> tags
+
+        const randomX = Math.random() * window.innerWidth - 400;
+        const randomY = window.scrollY + Math.random() * window.innerHeight-400;
+        const randomFontSize = Math.random() * (this.fontSizeRange[1] - this.fontSizeRange[0]) + this.fontSizeRange[0];
+
+        textBlock.style.left = `${randomX}px`;
+        textBlock.style.top = `${randomY}px`;
+        textBlock.style.fontSize = `${randomFontSize}px`;
+
+        document.body.appendChild(textBlock);
+
+        setTimeout(() => {
+            textBlock.remove();
+        }, 10000);
+    }
+
+    startSpawning() {
+        setInterval(() => this.spawnTextBlock(), this.spawnInterval);
+    }
+}
+
+// Initialize the effect
+const randomTextBlock = new RandomTextBlock(20, [10, 30], 500);

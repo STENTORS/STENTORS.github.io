@@ -1,1 +1,82 @@
-const _0x4551f1=_0x5c3f;(function(_0x41cd63,_0x46d76a){const _0x3a1f15=_0x5c3f,_0x5cf297=_0x41cd63();while(!![]){try{const _0x225a80=-parseInt(_0x3a1f15(0x1f1))/0x1+parseInt(_0x3a1f15(0x1ec))/0x2+-parseInt(_0x3a1f15(0x1fb))/0x3*(parseInt(_0x3a1f15(0x1ed))/0x4)+parseInt(_0x3a1f15(0x1f0))/0x5+-parseInt(_0x3a1f15(0x200))/0x6+parseInt(_0x3a1f15(0x1ee))/0x7*(-parseInt(_0x3a1f15(0x1db))/0x8)+parseInt(_0x3a1f15(0x1e5))/0x9;if(_0x225a80===_0x46d76a)break;else _0x5cf297['push'](_0x5cf297['shift']());}catch(_0x10a931){_0x5cf297['push'](_0x5cf297['shift']());}}}(_0x5454,0x99e75));function home(){const _0x4afb9c=_0x5c3f;document['location']=_0x4afb9c(0x1e4);}function _0x5c3f(_0x1d5c48,_0x2db7ec){const _0x5454b2=_0x5454();return _0x5c3f=function(_0x5c3f86,_0x3f33a4){_0x5c3f86=_0x5c3f86-0x1db;let _0x2759a6=_0x5454b2[_0x5c3f86];return _0x2759a6;},_0x5c3f(_0x1d5c48,_0x2db7ec);}function _0x5454(){const _0x2b73aa=['flag{E9j4Q6cL3T2}','innerText','\x20found','634680mNTsah','840bMBVGN','flag{Y2v6F9zQ3B8}','flag{P5n4J3kL8T7}','foundFlagStorage','flag{R7d3N8vK5M1}','flag{C9r2W5nP8X4}','flag{X7p2L3vK6M5}','flag{B7x2}','getElementById','index.html','13986387NKcsZE','push','flag{B9r5X3nL2T6}','onload','Incorrect\x20flag.\x20Try\x20again.','flag{H6b1V8zK4Q3}','value','63862Bruumg','160rCYobh','1414HvyvXX','stringify','327750Aaswau','482505FnKlgZ','FOUND!!','Correct\x20flag\x20number\x20','parse','length','flag{D9k6Y5jN2T8}','flag{Z8m7W9rT2K6}','getItem','toString','flag{A8d3J7kT6Q9}','30873iOwgLh','includes'];_0x5454=function(){return _0x2b73aa;};return _0x5454();}let userFlagArray=JSON[_0x4551f1(0x1f4)](localStorage[_0x4551f1(0x1f8)](_0x4551f1(0x1de)))||[];function reloadValues(){const _0x47b0f4=_0x4551f1;if(userFlagArray[_0x47b0f4(0x1f5)]>0x0)for(let _0xcf6d2a=0x0;_0xcf6d2a<userFlagArray[_0x47b0f4(0x1f5)];_0xcf6d2a++){let _0x337b68=userFlagArray[_0xcf6d2a];document[_0x47b0f4(0x1e3)](_0x337b68)[_0x47b0f4(0x1fe)]=_0x47b0f4(0x1f2);}}function check(_0x2073a9){const _0x2051da=_0x4551f1;_0x2073a9['preventDefault']();let _0x2afbef=document['getElementById']('flag')[_0x2051da(0x1eb)];const _0x3990cd=[_0x2051da(0x1fa),_0x2051da(0x1e0),_0x2051da(0x1ea),'flag{L5p9T2fY7X8}',_0x2051da(0x1df),_0x2051da(0x1fd),'flag{M1k7X8nD5V4}',_0x2051da(0x1dc),_0x2051da(0x1dd),_0x2051da(0x1f7),_0x2051da(0x1e2),_0x2051da(0x1f6),_0x2051da(0x1e1),_0x2051da(0x1e7)];for(let _0x33ecc6=0x0;_0x33ecc6<_0x3990cd[_0x2051da(0x1f5)];_0x33ecc6++){if(_0x3990cd[_0x33ecc6]===_0x2afbef){let _0x24d5e4=_0x33ecc6[_0x2051da(0x1f9)]();!userFlagArray[_0x2051da(0x1fc)](_0x24d5e4)?(document[_0x2051da(0x1e3)](_0x24d5e4)[_0x2051da(0x1fe)]=_0x2051da(0x1f2),userFlagArray[_0x2051da(0x1e6)](_0x24d5e4),localStorage['setItem'](_0x2051da(0x1de),JSON[_0x2051da(0x1ef)](userFlagArray)),alert(_0x2051da(0x1f3)+(_0x33ecc6+0x1)+_0x2051da(0x1ff))):alert('Already\x20found');return;}}alert(_0x2051da(0x1e9));}window[_0x4551f1(0x1e8)]=function(_0x1a2a38){reloadValues();};
+//obfuscate
+function home() {
+    document.location = 'home.html';
+}
+
+let userFlagArray = JSON.parse(localStorage.getItem("foundFlagStorage")) || [];
+
+function reloadValues() {
+    if (userFlagArray.length > 0) {
+        for (let j = 0; j < userFlagArray.length; j++) {
+            let numj = userFlagArray[j];
+            document.getElementById(numj).innerText = "FOUND!!";
+        }
+    }
+}
+
+function check(event) {
+    event.preventDefault();
+
+    let flag = document.getElementById("flag").value;
+
+    const flagArray = [
+        "flag{A8d3J7kT6Q9}", //1 - CSS
+        "flag{C9r2W5nP8X4}", //2 - HTML
+        "flag{H6b1V8zK4Q3}", //3 - JS
+        "flag{L5p9T2fY7X8}", //4.1 - Shop
+        "flag{R7d3N8vK5M1}", //4.2 - Shop
+        "flag{E9j4Q6cL3T2}", //5.1 - Blog
+        "flag{M1k7X8nD5V4}", //5.2 - Blog
+        "flag{Y2v6F9zQ3B8}", //5.3 - Blog
+        "flag{P5n4J3kL8T7}", //6.1 - Gallery 
+        "flag{Z8m7W9rT2K6}", //6.2 - Gallery
+        "flag{B7x2}",        //7 - Poster
+        "flag{D9k6Y5jN2T8}", //8 - Encryption
+        "flag{X7p2L3vK6M5}", //9 - HEX 
+        "flag{T8d1Q4kV9W3}", //10 - Storage
+        "flag{B9r5X3nL2T6}"  //11 - File Management
+    ];
+
+    for (let i = 0; i < flagArray.length; i++) {
+        if (flagArray[i] === flag) {
+            let num = i.toString(); // Convert index to string
+
+            // Only add the flag if it hasn't been added before
+            if (!userFlagArray.includes(num)) {
+                document.getElementById(num).innerText = "FOUND!!";
+                userFlagArray.push(num);
+
+                // Save found flags in localStorage
+                localStorage.setItem("foundFlagStorage", JSON.stringify(userFlagArray));
+
+                alert("Correct flag number " + (i + 1) + " found");
+                
+                // Update the progress bar when a correct flag is submitted
+                updateProgressBar();
+            } else {
+                alert("Already found");
+            }
+            return;
+        }
+    }
+    alert("Incorrect flag. Try again.");
+}
+
+
+
+function reloadValues() {
+    if (userFlagArray.length > 0) {
+        for (let j = 0; j < userFlagArray.length; j++) {
+            let numj = userFlagArray[j];
+            document.getElementById(numj).innerText = "FOUND!!";
+        }
+    }
+    updateProgressBar(); // Update the progress bar when flags are loaded
+}
+
+function updateProgressBar() {
+    const totalFlags = 15; // Total number of challenges
+    const progressBar = document.getElementById("progressBar");
+    const progressPercentage = (userFlagArray.length / totalFlags) * 100; // Calculate percentage
+    progressBar.style.width = progressPercentage + '%'; // Update progress bar width
+}

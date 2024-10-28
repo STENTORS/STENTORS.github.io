@@ -1,1 +1,76 @@
-(function(_0x4f7771,_0x4cc4eb){var _0x406ae9=_0x2d33,_0x3c954f=_0x4f7771();while(!![]){try{var _0x32c240=parseInt(_0x406ae9(0x1bf))/0x1+parseInt(_0x406ae9(0x1af))/0x2+-parseInt(_0x406ae9(0x1ac))/0x3+-parseInt(_0x406ae9(0x1b9))/0x4+parseInt(_0x406ae9(0x1b7))/0x5+parseInt(_0x406ae9(0x1ba))/0x6+-parseInt(_0x406ae9(0x1b0))/0x7*(parseInt(_0x406ae9(0x1b4))/0x8);if(_0x32c240===_0x4cc4eb)break;else _0x3c954f['push'](_0x3c954f['shift']());}catch(_0x747d65){_0x3c954f['push'](_0x3c954f['shift']());}}}(_0x5cb4,0x88a76));function c1(){var _0x1e3efd=_0x2d33;alert(_0x1e3efd(0x1b5));}function _0x2d33(_0x535cf7,_0x499075){var _0x5cb417=_0x5cb4();return _0x2d33=function(_0x2d33cf,_0x47ba61){_0x2d33cf=_0x2d33cf-0x1aa;var _0x1d370b=_0x5cb417[_0x2d33cf];return _0x1d370b;},_0x2d33(_0x535cf7,_0x499075);}function c2(){alert('Right\x20Click\x20and\x20go\x20to\x20inspect\x20element\x20try\x20to\x20find\x20the\x20flag\x20there');}function c3(){alert('Try\x20find\x20the\x20console');}function c4(){var _0x134fa1=_0x2d33;alert(_0x134fa1(0x1bc));}function c5(){alert('Can\x20you\x20find\x20the\x20login\x20in\x20inspect\x20element?');}function c6(){var _0x3a17be=_0x2d33;alert(_0x3a17be(0x1bd));}function c7(){var _0xca566=_0x2d33;alert(_0xca566(0x1b1));}function c8(){var _0x3c9373=_0x2d33;alert(_0x3c9373(0x1b6));}function c9(){var _0x1ef269=_0x2d33;alert(_0x1ef269(0x1b3));}function _0x5cb4(){var _0x46e3ac=['Gather\x20and\x20covert\x20all\x20the\x20HEX\x20on\x20the\x20home\x20page','ROT13\x20encryption','Look\x20in\x20the\x20stoarge\x20section\x20of\x20inspect\x20element\x20for\x20the\x20flag','2798511rmYDej','<ul><li>\x27\x20or\x20\x27\x27=\x27</li><li>\x27\x20or\x201=1--</li>\x20<li>\x27\x20or\x201=1#</li></ul>','Check\x20the\x20CTF\x20poster....\x20whats\x20strange\x20about\x20the\x20binary...','1514588DSdYjF','2130758HwUWJg','Look\x20at\x20the\x20different\x20account\x20urls...','innerHTML','Check\x20the\x20image\x20files','24ooielJ','Try\x20looking\x20at\x20the\x20styling\x20of\x20the\x20website,\x20its\x20easier\x20than\x20you\x20think','the\x20discount\x20code\x20has\x20a\x20database\x20vunrability...\x20https://www.w3schools.com/sql/sql_injection.asp','4886105NEClZG','getElementById','2440792gtiXob','3462084vvLaDD','location','Try\x20manipulating\x20all\x20of\x20the\x20possible\x20inputs','One\x20of\x20the\x20blog\x20users\x20has\x20a\x20weak\x20pasword...','sql','704422suEsnF'];_0x5cb4=function(){return _0x46e3ac;};return _0x5cb4();}function c10(){alert('Steganography:\x20https://manytools.org/hacker-tools/steganography-encode-text-into-image/\x20');}function c11(){var _0x11b4a8=_0x2d33;alert(_0x11b4a8(0x1ae));}function c12(){var _0x506d0e=_0x2d33;alert(_0x506d0e(0x1aa));}function c13(){var _0x65c5fb=_0x2d33;alert(_0x65c5fb(0x1c0));}function c14(){var _0x48ce2c=_0x2d33;alert(_0x48ce2c(0x1ab));}function c(){alert('');}function cheatsheet(){var _0xc10f22=_0x2d33;document[_0xc10f22(0x1b8)](_0xc10f22(0x1be))[_0xc10f22(0x1b2)]==''?document['getElementById'](_0xc10f22(0x1be))[_0xc10f22(0x1b2)]=_0xc10f22(0x1ad):document['getElementById'](_0xc10f22(0x1be))[_0xc10f22(0x1b2)]='';}function home(){var _0xbead26=_0x2d33;document[_0xbead26(0x1bb)]='index.html';}
+function c1() {
+    alert("There is a strange gap in the first box? Try highlighting it");
+}
+
+function c2() {
+    alert("Right-click and go to 'Inspect Element'; try to find the flag there.");
+}
+
+function c3() {
+    alert("Try to find the console in Inspect Element.");
+}
+
+function c4() {
+    alert("Try manipulating all of the possible inputs.");
+}
+
+function c5() {
+    alert("Can you find the login in 'Inspect Element' script data?");
+}
+
+function c6() {
+    alert("One of the blog users has a weak 'pass'word...");
+}
+
+function c7() {
+    alert("Look at the different account URLs...");
+}
+
+function c8() {
+    alert("The discount code has a database vulnerability... https://www.w3schools.com/sql/sql_injection.asp");
+}
+
+function c9() {
+    alert("Check the image file names.");
+}
+
+function c10() {
+    alert("Steganography is the practice of hiding secret information within an ordinary file, such as an image Use this tool on the images: https://manytools.org/hacker-tools/steganography-encode-text-into-image/");
+}
+
+function c11() {
+    alert("Check the CTF poster.... what's strange about the binary...");
+}
+
+function c12() {
+    alert("ROT13 encryption.");
+}
+
+function c13() {
+    alert("Gather and convert all the HEX on the homepage.");
+}
+
+function c14() {
+    alert("Look in the local storage section of 'Inspect Element' for the flag.");
+}
+
+function c15() {
+    alert("The system only wants a text file; you have to spoof another file type (BAT, PIF, or EXE) to make it look like a text file. Use this guide for help: https://www.malwarebytes.com/blog/news/2016/09/lesser-known-tricks-of-spoofing-extensions");
+}
+
+function c() {
+    alert("");
+}
+
+function cheatsheet() {
+    const sqlElement = document.getElementById("sql");
+    if (sqlElement.innerHTML === "") {
+        sqlElement.innerHTML = "<ul><li>' or ''='</li><li>' or 1=1--</li><li>' or 1=1#</li></ul>";
+    } else {
+        sqlElement.innerHTML = "";
+    }
+}
+
+function home() {
+    document.location = 'home.html';
+}
