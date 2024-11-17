@@ -1,1 +1,70 @@
-(function(_0x5c6cd7,_0x27770c){const _0x1ce7ff=_0x5e3e,_0x47cdcb=_0x5c6cd7();while(!![]){try{const _0x1e6b35=-parseInt(_0x1ce7ff(0x1e2))/0x1*(parseInt(_0x1ce7ff(0x1ef))/0x2)+parseInt(_0x1ce7ff(0x1ee))/0x3+-parseInt(_0x1ce7ff(0x1e3))/0x4*(-parseInt(_0x1ce7ff(0x1f0))/0x5)+-parseInt(_0x1ce7ff(0x1f1))/0x6+-parseInt(_0x1ce7ff(0x1e1))/0x7+-parseInt(_0x1ce7ff(0x1f3))/0x8+parseInt(_0x1ce7ff(0x1e5))/0x9*(parseInt(_0x1ce7ff(0x1e8))/0xa);if(_0x1e6b35===_0x27770c)break;else _0x47cdcb['push'](_0x47cdcb['shift']());}catch(_0x319bbe){_0x47cdcb['push'](_0x47cdcb['shift']());}}}(_0x1ad5,0x89063));let basket=[],amount1=0x5,amount2=0x5,amount3=0x5;function addToBasket(_0x149bce,_0x1cc267,_0x4dbb0f){const _0x2e378c=_0x5e3e;basket[_0x2e378c(0x1e0)]({'item':_0x149bce,'price':_0x1cc267});if(_0x4dbb0f==0x1)amount1+=0x1,document[_0x2e378c(0x1ec)]('amount-display1')['innerText']=amount1;else{if(_0x4dbb0f==0x2)amount2+=0x1,document[_0x2e378c(0x1ec)]('amount-display2')[_0x2e378c(0x1f2)]=amount2;else _0x4dbb0f==0x3&&(amount3+=0x1,document[_0x2e378c(0x1ec)](_0x2e378c(0x1ea))[_0x2e378c(0x1f2)]=amount3);}}function remove(_0x55b576){const _0x47d9f8=_0x5e3e;if(_0x55b576==0x1)amount1<=0x0?alert(_0x47d9f8(0x1e7)):(amount1-=0x1,document[_0x47d9f8(0x1ec)]('amount-display1')[_0x47d9f8(0x1f2)]=amount1);else{if(_0x55b576==0x2)amount2<=0x0?alert(_0x47d9f8(0x1e7)):(amount2-=0x1,document[_0x47d9f8(0x1ec)]('amount-display2')[_0x47d9f8(0x1f2)]=amount2);else _0x55b576==0x3&&(amount3<=0x0?alert(_0x47d9f8(0x1e7)):(amount3-=0x1,document['getElementById'](_0x47d9f8(0x1ea))[_0x47d9f8(0x1f2)]=amount3));}}function viewBasket(){const _0x10df3d=_0x5e3e;let _0x23e349='Your\x20Basket:\x0a',_0x18f58a=0x0;basket[_0x10df3d(0x1ed)](_0x425f9f=>{const _0x4490a4=_0x10df3d;_0x23e349+=_0x425f9f[_0x4490a4(0x1eb)]+'\x20-\x20'+_0x425f9f[_0x4490a4(0x1f4)]+_0x4490a4(0x1e6),_0x18f58a+=_0x425f9f[_0x4490a4(0x1f4)];}),_0x23e349+='\x0aTotal:\x20'+_0x18f58a+'\x20Points',alert(_0x23e349);}function _0x5e3e(_0x34699e,_0x3c927c){const _0x1ad595=_0x1ad5();return _0x5e3e=function(_0x5e3e0a,_0x29f0fb){_0x5e3e0a=_0x5e3e0a-0x1e0;let _0x76b822=_0x1ad595[_0x5e3e0a];return _0x76b822;},_0x5e3e(_0x34699e,_0x3c927c);}function checkout(){const _0x4af67b=_0x5e3e;document[_0x4af67b(0x1e9)]=_0x4af67b(0x1e4);}function _0x1ad5(){const _0x4323dd=['315796ehPFup','checkout.html','927108pwOkCu','\x20Points\x0a','flag{L5p9T2fY7X8}','120boqHbc','location','amount-display3','item','getElementById','forEach','1985019YnmHpI','8014iFcYBq','55xmTaEE','5940636VNxTNr','innerText','6729936mJkynr','price','push','1157051KcTkjU','52xuubPg'];_0x1ad5=function(){return _0x4323dd;};return _0x1ad5();}function home(){document['location']='home.html';}
+let basket = [];
+let amount1 = 5;
+let amount2 = 5;
+let amount3 = 5;
+
+function addToBasket(item, price, itemval) {
+    basket.push({ item, price });
+    
+    if (itemval == 1) {
+        amount1 += 1;
+        document.getElementById('amount-display1').innerText = amount1;
+    }
+    else if (itemval == 2) {
+        amount2 += 1;
+        document.getElementById('amount-display2').innerText = amount2;
+    }
+    else if (itemval == 3) {
+        amount3 += 1;
+        document.getElementById('amount-display3').innerText = amount3;
+    }
+}
+
+function remove(item) {
+    if (item == 1) {
+        if (amount1 <= 0) {
+            alert("flag{L5p9T2fY7X8}");
+        } else {
+            amount1 -= 1;
+            document.getElementById('amount-display1').innerText = amount1;
+        }
+    } 
+    else if (item == 2) {
+        if (amount2 <= 0) {
+            alert("flag{L5p9T2fY7X8}");
+        } else {
+            amount2 -= 1;
+            document.getElementById('amount-display2').innerText = amount2;
+        }
+    } 
+    else if (item == 3) {
+        if (amount3 <= 0) {
+            alert("flag{L5p9T2fY7X8}");
+        } else {
+            amount3 -= 1;
+            document.getElementById('amount-display3').innerText = amount3;
+        }
+    }
+}
+
+
+function viewBasket() {
+	let basketContent = 'Your Basket:\n';
+	let total = 0;
+	basket.forEach(entry => {
+		basketContent += `${entry.item} - ${entry.price} Points\n`;
+		total += entry.price;
+	});
+	basketContent += `\nTotal: ${total} Points`;
+	alert(basketContent);
+}
+		
+function checkout(){
+	document.location='checkout.html'
+}
+
+function home() {
+	document.location='home.html'
+}
+
+//obfuscate

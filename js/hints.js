@@ -39,7 +39,7 @@ function c10() {
 }
 
 function c11() {
-    alert("Check the CTF poster.... what's strange about the binary...");
+    alert("Use the steganography tool from the last flag with the favicon image in this website (which you can find in the head tag in the html of any of the pages). Use that information to locate and scan the nfc with your phone (ensure to enable nfc on your phone");
 }
 
 function c12() {
